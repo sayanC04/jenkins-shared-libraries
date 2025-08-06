@@ -21,10 +21,6 @@
 
 Transform your Jenkins pipelines from repetitive scripts to elegant, reusable functions! This library provides battle-tested DevOps functions that make CI/CD a breeze.
 
-<div align="center">
-<img src="https://user-images.githubusercontent.com/1234567/example-pipeline-flow.png" alt="Pipeline Flow" width="600"/>
-</div>
-
 ---
 
 ## ⚡ Quick Start
@@ -130,31 +126,6 @@ pipeline {
 
 ---
 
-## 🎯 Pro Tips
-
-💡 **Error Handling:**
-```groovy
-try {
-    docker_build('app', 'latest', 'user')
-} catch (Exception e) {
-    hello("❌ Build failed: ${e.getMessage()}")
-}
-```
-
-🔀 **Parallel Builds:**
-```groovy
-parallel {
-    stage('Frontend') {
-        steps { docker_build('frontend', 'latest', 'user') }
-    }
-    stage('Backend') {
-        steps { docker_build('backend', 'latest', 'user') }
-    }
-}
-```
-
----
-
 ## 🤝 Contributing
 
 Found a bug? Want to add a feature? We'd love your help!
@@ -168,13 +139,6 @@ Found a bug? Want to add a feature? We'd love your help!
 ---
 
 <div align="center">
-
-## 🆘 Need Help?
-
-[![Issues](https://img.shields.io/github/issues/sayanC04/jenkins-shared-libraries?style=for-the-badge)](https://github.com/sayanC04/jenkins-shared-libraries/issues)
-[![Discussions](https://img.shields.io/badge/GitHub-Discussions-orange?style=for-the-badge&logo=github)](https://github.com/sayanC04/jenkins-shared-libraries/discussions)
-
----
 
 **Made with ❤️ for the DevOps Community**
 
